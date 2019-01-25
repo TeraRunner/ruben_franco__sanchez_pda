@@ -1,10 +1,9 @@
 p "Please, add the data you want to store and we will organize it for you."
 @input = gets.chomp
-@data = ["Info A", "Info B", "Info D"]
+@data = ["Info A", "Info B", "Info C"]
 
 def array_screenshot
   @data.push(@input)
-  @data.sort
   p @data
 end
 
