@@ -17,15 +17,15 @@ class TestCard < Minitest::Test
     assert_equal(false, @cardGame.checkforAce(@card2))
   end
 
-  # def test_highest_card()
-  #   expected = @card2
-  #   actual = Card.highest_card(@card1, @card2)
-  #   assert_equal(expected, actual)
-  # end
-  #
-  # def test_cards_total()
-  #   result = Card.cards_total(@cards)
-  #   assert_equal(3, result)
-  # end
+  def test_highest_card()
+    expected = @card2
+    actual = Card.highest_card(@card1, @card2)
+    assert_equal(expected, actual)
+  end
+
+  def test_cards_total()
+    result = Card.cards_total(@cards)
+    assert_equal(3, result)
+  end
 
 end
